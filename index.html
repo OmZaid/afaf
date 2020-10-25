@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+		.top{
+			position: fixed;
+			width:100%;
+			
+		}
+        .title{
+            width: 100%;
+             
+            background-color:crimson;
+             text-align: center;
+			padding: 30px;
+            color: #fff;
+            text-shadow: 5px 5px 5px green;
+            
+        }
+        /*navbar*/
+        .navbar{
+            
+            width: 100%;
+            background:rgba(255,0,0,0.4);
+           
+             
+           
+        }
+        .navbar ul{  display: flex;
+           align-items: center;
+			 opacity: 1;
+        }
+        .A,.A1{
+            padding: 15px 20px;
+            list-style: none;
+            color: #fff;
+			 
+        }
+        .A1{ position: relative;}
+        .A:hover{background-color: pink;
+        color:crimson;}
+        .drop{ position: absolute;
+            background-color: crimson;
+            width:100%;
+            height: 100px;
+           flex-direction: column;
+           visibility: hidden;
+            top:100%;
+			left:0;
+        }
+        .drop li{
+            padding: 15px 5px;
+            color: snow;;
+        }
+        
+        .A1:hover{background-color: pink;
+        color:crimson;} 
+        .A1:hover .drop{
+            visibility: visible;
+        }
+        /*header*/
+        .header{
+            display: flex;
+            width:100%;
+            height: 650px;
+			background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(image/1.jpg);
+			background-size: cover;
+				background-position: center left;
+			justify-content: center;
+			align-items: center;
+        }
+        .header .content1{
+         background-color:pink;
+			color:#333;
+			padding:20px;
+			border-radius: 75px;
+			
+        }
+        /*header end here*/
+        .content{width: 100%;
+        height: 500px;}
+        .lift{
+            flex-basis: 20%;
+            background-color:skyblue;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .lift a{ background-color: crimson;
+        color: azure;
+        margin: 10px 10px;
+        text-decoration: none;
+            border-radius: 10px;
+        padding: 10px 3px;}
+        .lift a:hover{background-color: antiquewhite;
+        color:indigo;
+        border-radius:0 17px;}
+        .main{
+            flex-basis: 80%;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .duyuru {display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            padding-top: 20px;
+            width: 700px;
+            height: 300px;
+            background-color:lightblue;
+            border-radius: 7px;
+        }
+        .duyuru h3{
+            color: darkgreen;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px brown;
+        }
+        .part{ ;
+            height: 80px;
+            padding: 10px;
+            margin: 6px;
+            background-color: snow;
+            border-left: 7px solid darkgreen;
+            color: goldenrod;
+            font-size: 20px;
+            border-radius: 0 40px 40px 0;
+        }
+        .part:hover{
+            background-color: lightpink;
+            color: whitesmoke;
+            border-color: crimson;
+        }
+        /*body*/
+        .body{ width: 100%;
+        background-color: whitesmoke;
+        }
+        .body b{
+           margin: 40px;
+            font-size: 30px;
+            color: darkblue;
+        }
+        .clas{
+            display:flex;
+            width: 100%;
+            height: 500px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .clas1{
+            width: 300px;
+            height: 300px;
+           
+           
+        }
+        .clas1 img{
+             width: 300px;
+            height: 300px;
+            object-fit: cover;
+             border-radius: 150px;
+        }
+        .services{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 500px;
+            
+        }
+        .service h3{color:darkblue;
+        margin: 20px;
+        font-size: 40px;} 
+        .service1{
+            width: 250px;
+            height: 350px;
+            background-color:aliceblue;
+            
+             border-radius: 70PX 10PX ;
+        }
+        .service1 img{
+             width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 70px 10PX;
+        }
+        .service1 p{
+            margin-top: 10px;
+            margin-left: 5px;
+            color:blueviolet;
+            font-size: 30px;
+        }
+       .service1 .font{
+            font-size: 15px;
+        } .log{position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url(image/santi-vedri-O5EMzfdxedg-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+
+            
+            
+        }
+        .log h2{ font-size: 40px;
+            text-align: center;
+        color:deeppink;
+        position: absolute;
+        top:30%;}
+        .content{
+            width: 100%;
+            display: flex;
+        }
+        footer{
+            width: 100%;
+            
+            background-color:crimson;
+            display: flex;
+            justify-content:space-around;
+        }
+		footer a{
+			color:#fff;
+		}
+        .div1{ padding: 20px;
+        width: 250px;
+        height: 160px;
+        text-align: center;}
+        .div1 h2{
+            font-size: 30px;
+            color: gray;
+        }
+        .div1 i{font-size: 20px;
+        display:block;
+            transition: 1s;
+            padding: 5px;
+        }
+        .div1 i:hover{
+            transform: rotate(360deg);
+            color: aliceblue;
+        }
+        .div1 h3{color: gainsboro;
+        padding: 5px;}
+        .div1 h4{
+            color: darkblue;
+            
+        }
+		@media screen and (max-width: 700px){
+			 .navbar ul{  
+				 flex-direction: column;
+        }
+		}
+      </style>
+    
+    </head>
+    <body>
+    <div class="top">
+		<div class="title">
+        
+        <h1><i class="fa fa-ravelry" aria-hidden="true"></i>  FUTURE ANAOKUL </h1>
+    </div>
+    <div class="navbar">
+           
+      <ul ><li class="A">ANA SAYFA</li>
+          <li class="A"> HAKKIMIZDA</li>
+          <li class="A">EĞİTİMLERİMİZ</li>
+          <li class="A">FOTOĞRAFI</li>
+          <li class="A1">DAHA FAZLA <i class="fa fa-sort-desc" aria-hidden="true"></i>
+         <ul class="drop">
+              <li> yaz okulu</li>
+             <li> bize ulaşın</li>
+         </ul>
+          </li>
+        </ul>
+       
+    </div>
+		</div>
+    <div class="header">
+        <div class="content1">
+			<h1>Welcome To Our School</h1>
+		</div>
+    
+        
+     </div>
+   
+        <div class="content">
+        <div class="lift">
+            <a href=" "> derslik sayısı (12)</a>
+             <a href=" "> öğretmen sayısı (15)</a>
+             <a href=" "> öğrenci sayısı  (140)</a>
+             <a href=" "> çalışma saatlerimiz 08:00/16:00</a>
+             <a href=" "> çalışan velilerimiz için 07:30/16:00</a>
+            </div>
+        <div class="main">
+            <div class="duyuru">
+                <h3> DUYURULAR :</h3>
+                
+                    <div class="part">yeni kayıtlar 23 Ekim de başlıyor daha belgi almak istiyorsanız bizi ziyaret edebilirsiniz</div>
+                    <div class="part">DİKKAT! cuma günü tatil </div>
+                    <div class="part"> dağ etkinliği başvurmak istiyorsanız buraya tıklayın</div>
+                
+            </div></div>
+        </div>
+    
+        <div class="body">
+            <b> SINIFLAR </b>
+         <div class="clas">
+             
+             <div class="clas1"> <img src="image/2.jpg"></div>
+             <div class="clas1"><img src="image/3.jpg"></div>
+             <div class="clas1"><img src="image/4.jpg"></div>
+            </div>
+        <div class="service">
+            <h3>HİZMETLERİMİZ</h3>
+          <div class="services" > 
+              <div class="service1"><img src="image/5.jpg"><p>*Günde iki öğün verilmektedir</p></div>
+             <div class="service1"><img src="image/6.jpg"><p  class="font">Okul Sağlığı Hizmetleri Öğrencilerin ve okul personelinin sağlığın değerlendirilmesi, geliştirilmesi, öğrenciye ve dolayısıyla topluma sağlık eğitiminin verilebilmesi için yapılan çalışmaların tümüdür.</p></div>
+             <div class="service1"><img src="image/7.jpg"><p> Psikolojik Destek </p></div>
+            </div>
+            </div>
+               <div class="log">
+        
+        <h2>Çocuklarımız bizlerin yarınları olacaktır , yarınlar için çocuklarımızı birlikte büyütelim.</h2>
+        </div>
+        </div>
+        <footer>
+            <div class="div1"> <h2> social media </h2> 
+            <a href=""><i class="fa fa-facebook"></i></a>
+           <a href=""> <i class="fa fa-twitter"></i></a>
+               <a href=""> <i class="fa fa-telegram"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a></div>
+            <div class="div1">
+             <h2> iletişim </h2> 
+                <h4>ANTAKYA SARAYKENT MAH. AYÇE SOKAK NO:04</h4>
+                <h3>E-Posta:</h3>
+                <h4> futuranaokulu@gmail.com</h4>
+                <h3>Telefon:</h3>
+                <h4> 05433100125</h4>
+            </div>
+        </footer>
+        
+    </body>
+
+
+</html>
